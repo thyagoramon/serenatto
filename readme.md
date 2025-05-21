@@ -9,7 +9,7 @@ Projeto front-end desenvolvido usando Vite como bundler e SASS como pré-process
 ## Funcionalidades da página:
 - Responsividade em diferentes tamanhos de tela.
 - Modo noturno.
-- Munu lateral animado em telas menores, com fechamento através de botão ou clique fora do menu.
+- Menu lateral animado em telas menores, com fechamento através de botão ou clique fora do menu.
 - Modais/pop-ups, com fechamento através de botões ou clique fora do janela.
 - Formulário de cadastro.
 - Efeitos decorativos ao posicionar o cursor do mouse.
