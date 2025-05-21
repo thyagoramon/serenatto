@@ -2,9 +2,9 @@
 
 Projeto front-end desenvolvido usando Vite como bundler e SASS como pré-processador como exercício da formação "CSS avançado: implementando designs com Grid, Flexbox e Sass" da Alura.
 
-![AluraStart]()
+![serenatto](https://github.com/user-attachments/assets/8381f35e-fb70-4380-9412-9e91f5652672)
 
-[Clique aqui para visualizar a página]()
+[Clique aqui para visualizar a página](https://thyagoramon.github.io/serenatto/)
 
 ## Funcionalidades da página:
 - Responsividade em diferentes tamanhos de tela.
