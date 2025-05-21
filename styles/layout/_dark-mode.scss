@@ -1,0 +1,63 @@
+@use '../base/variables';
+
+.dark-mode {
+    background-color: variables.$dark-primary-color;
+    color: variables.$dark-secondary-color;
+    h1, h2, h3, h4, h5 {
+        color: variables.$dark-secondary-color;
+    }
+    header, aside {
+        background-color: variables.$dark-primary-color;
+    }
+    .navbar {
+        background-color: variables.$dark-primary-color;
+        .navbar-nav .nav-link {
+            color: variables.$dark-secondary-color;
+            &:hover {
+                color: variables.$dark-accent-color;
+            }
+        }
+    }
+    .navbar-toggler {
+        border: solid 1px variables.$nav-link-color;
+        border-radius: 10px;
+        transition: variables.$transition-duration ease;
+        .hamburger-icon {
+            background-image: url('/assets/hamburger-icon-dkm.svg');
+        }
+    }
+    .sidebar {
+        box-shadow: 0px 0px 10px 5px rgba(#fff, 0.05);
+        background-color: variables.$dark-primary-color;
+        .sidebar-nav {
+            .nav-link {
+                color: variables.$dark-secondary-color;
+                &:hover {
+                    color: variables.$accent-color;
+                }
+            }
+        }
+    }
+    .sidebar_backdrop {
+        background-color: rgba(#000, 0.75);
+    }
+    .modal-content {
+        background-color: variables.$dark-primary-color;
+        box-shadow: 0 0 10px rgba($color: #fff, $alpha: 0.2);
+        .modal-header {
+            .modal-title {
+                color: variables.$dark-secondary-color;
+            }
+        }
+        .modal-body {
+            border-top: 1px solid variables.$nav-link-color;
+            border-bottom: 1px solid variables.$nav-link-color;            
+            p {
+                color: variables.$dark-secondary-color;
+            }
+        }
+    }       
+    .modal-backdrop {
+        background-color: rgba($color: variables.$dark-primary-color, $alpha: 0.75);
+    }
+}

@@ -1,0 +1,38 @@
+@use '../base/variables';
+@use '../base/mixins';
+
+.form {
+    @include mixins.flex();
+    gap: 20px;
+    width: 100%;
+    .form-group {
+        width: 100%;            
+        input, select {
+            border: solid 1px variables.$form-border-color;
+            border-radius: 6px;
+            padding: 10px 15px;
+            outline: none;
+            width: 100%;
+            color: variables.$nav-link-color;
+            @include mixins.hover-scale-shadow($escala:1);
+            &::placeholder {
+                color: variables.$nav-link-color;
+            }
+            option {
+                color: variables.$nav-link-color;
+            }
+        }
+        label {
+            display: none;
+        }
+    }
+    .btn {
+        background-color: variables.$accent-color;
+        color: variables.$secondary-color;
+        width: 100%;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 6px;
+        @include mixins.hover-background-shadow();
+    }
+}

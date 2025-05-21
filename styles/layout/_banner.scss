@@ -1,0 +1,65 @@
+@use "../base/variables";
+@use '../base/mixins';
+
+.banner {
+    width: 100vw;
+    padding: 100px 0;
+    @include mixins.flex();
+}
+.banner-1 {
+    background-image: url('/assets/banner-1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-content {
+    @include mixins.flex($a:start);
+    gap: 2rem;
+    h1 {
+        color: variables.$heading-color;
+        font-weight: 300;
+        line-height: 5.5rem;
+        @include mixins.responsive(tablet) {
+            line-height: 3rem;
+        }
+        span {
+            font-weight: 600;
+        }       
+    }
+    p {
+        color: variables.$secondary-color;
+        font-size: variables.$font-size-large;
+        line-height: 2.5rem;
+    }
+}
+
+.banner-2 {
+    background-image: url('/assets/banner-2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .banner-2-conteudo {
+        @include mixins.flex();
+        gap: 25px;
+        @include mixins.responsive(tablet) {
+            gap: 15px;
+        }
+        h2 {
+            color: variables.$heading-color;
+            text-align: center;
+        }
+        p {
+            color: variables.$secondary-color;
+            text-align: center;
+            font-size: variables.$font-size-medium;
+        }
+    }
+}
+
+.banner-3 {
+    height: 365px;
+    background-image: url('/assets/cafe-graos.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

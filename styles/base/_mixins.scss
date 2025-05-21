@@ -1,0 +1,53 @@
+@use '../base/variables';
+
+@mixin flex($d: column, $j: center, $a: center) {
+    display: flex;
+    flex-direction: $d;
+    justify-content: $j;
+    align-items: $a;
+} // @include mixins.flex();
+
+@mixin hover-scale-shadow($sombra: 5px, $opacidade: 0.5, $escala: 1.1, $borda: 1) {
+    transition: variables.$transition-duration ease;
+    &:hover {
+        box-shadow: 0 0 $sombra 0 rgba(variables.$accent-color, $opacidade);
+        scale: $escala;
+        border: solid $borda variables.$accent-color;
+    }
+} // @include mixins.hover-scale-shadow();
+
+@mixin hover-background-shadow($darken: 10%) {
+    transition: variables.$transition-duration ease;
+    &:hover {
+        background-color: darken(variables.$accent-color, $darken);
+        box-shadow: 0 0 5px 0 rgba(variables.$accent-color, 0.5);
+    }    
+} // @include mixins.hover-background-shadow();
+
+@mixin hover-color-shadow($sombra: 5px) {
+    transition: variables.$transition-duration ease;
+    &:hover {
+        color: variables.$accent-color;
+        box-shadow: 0 0 $sombra 0 rgba(variables.$accent-color, 0.5);
+    }
+} // @include mixins.hover-color-shadow();
+
+@mixin hover-text-color-weight() {
+    transition: variables.$transition-duration ease;
+    &:hover {
+        color: variables.$accent-color;
+        font-weight: bold;
+    }
+} // @include mixins.hover-text-color-weight();
+
+@mixin responsive($largura) {
+    @if $largura == descktop {
+        @media (max-width: 1920px) {@content;}
+    } @else if $largura == tablet {
+        @media (max-width: 960px) {@content;}
+    } @else if $largura == mobile {
+        @media (max-width: 480px) {@content;}
+    } @else {
+        @media (max-width: 480px) {@content;}
+    }    
+} // @include mixins.responsive(tablet);

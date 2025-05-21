@@ -1,0 +1,30 @@
+@use '../base/variables';
+@use '../base/mixins';
+
+footer {
+    width: 100vw;
+    background-color: variables.$accent-color;
+    @include mixins.flex();
+    padding: 25px 0;
+}
+.footer-content {
+    @include mixins.flex();
+    width: 100%;
+    color: variables.$secondary-color;
+    gap: 15px;
+    p {
+        text-align: center;
+    }
+    a {
+        color: variables.$secondary-color;
+        font-weight: bold;
+    }
+    .footer-image-container {
+        @include mixins.flex($d:row);
+        gap: 20px;
+        img {
+            cursor: pointer;
+            @include mixins.hover-scale-shadow($escala:1.2, $sombra:0, $borda:0);
+        }
+    }
+}

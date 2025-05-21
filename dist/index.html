@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="/Serenatto-cafe/assets/favicon-CENIAO58.png" type="image/x-icon">
+	<title>Serenatto</title>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;600&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./styles/main.css">
+  <script type="module" crossorigin src="/Serenatto-cafe/assets/index-3ZggYfp3.js"></script>
+  <link rel="stylesheet" crossorigin href="/Serenatto-cafe/assets/index-X4hIqmbi.css">
+</head>
+
+<body>
+	<header>
+		<nav class="navbar">
+			<div class="navbar-content container">
+				<a class="navbar-brand" href="#">
+					<img src="/Serenatto-cafe/assets/logo-maior-BOgvme-C.png" alt="Logo da cafeteria Serenatto">
+				</a>
+				<button class="navbar-toggler" aria-label="Menu" id="menu-toggle">
+					<span class="hamburger-icon"></span>
+				</button>
+				<div class="navbar-menu">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#servicos">Serviços</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#produtos">Produtos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#contato">Contato</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<div id="dark-mode-switch" class="dark-mode-switch">
+									<span id="slider" class="slider"></span>
+									<span class="toggle-text">Modo noturno</span>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<aside class="sidebar" id="sidebar">
+			<button id="sidebar-close" class="sidebar-close" aria-label="Close sidebar">&times;</button>
+			<a class="sidebar-brand" href="#">
+				<img src="/Serenatto-cafe/assets/logo-mobile-DKEJPcpX.png" alt="Logo da cafeteria Serenatto">
+			</a>
+			<ul class="sidebar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="#servicos">Serviços</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#produtos">Produtos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contato">Contato</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">
+						<div id="dark-mode-switch-sidebar" class="dark-mode-switch">
+							<span id="slider-sidebar" class="slider"></span>
+							<span class="toggle-text">Modo noturno</span>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</aside>
+		<div id="sidebar_backdrop" class="sidebar_backdrop sidebar_backdrop_closed"></div>
+	</header>
+
+	<main>
+		<section class="banner banner-1">
+			<div class="banner-content-container container">
+				<div class="banner-content">
+					<img src="/Serenatto-cafe/assets/logo-nav-Cyvu0o1Y.png" alt="">
+					<h1>Sua pausa <br> para <span>desfrutar <br> a vida.</span></h1>
+					<p>Boas-vindas ao & <strong>Bistrô Serenatto!</strong>
+						<br>Um ambiente aconchegante e acolhedor <br> para apreciar um bom café.
+				</div>
+			</div>
+		</section>
+
+		<section class="services container" id="servicos">
+			<h2>Nossos Serviços</h2>
+			<div class="services-container">
+				<article class="card">
+					<img src="/Serenatto-cafe/assets/cafe-e-bistro-CqAJ3Na9.png" alt="Balcão de padaria tradicional com alimentos diversos">
+					<div class="card-body">
+						<h5>Café & Bistrô</h5>
+						<p>Nosso bistrô oferece uma ampla variedade de cafés, smoothies, deliciosos salgados e
+							sobremesas. Uma
+							excelente opção para quem busca um lugar tranquilo e aconchegante.</p>
+					</div>
+				</article>
+				<article class="card">
+					<img src="/Serenatto-cafe/assets/buffet-adbVFb1-.png" alt="Mesa de buffet com alimentos diversos">
+					<div class="card-body">
+						<h5>Buffet</h5>
+						<p>Buffet e catering personalizado para eventos, produções e celebrações. Com um menu variado e
+							adaptável às
+							preferências do cliente, atendimento atencioso e profissional.</p>
+					</div>
+				</article>
+				<article class="card">
+					<img src="/Serenatto-cafe/assets/delivery-lyiMwRFB.png" alt="Caixa aberta armazenando comidas diversas">
+					<div class="card-body">
+						<h5>Delivery</h5>
+						<p>Para quem deseja desfrutar no conforto de casa, oferecemos delivery dos produtos. Com o mesmo
+							cardápio
+							variado de sempre, sem perder nosso sabor e padrão de qualidade.</p>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<section class="banner banner-2">
+			<div class="banner-2-conteudo container">
+				<h2>Portas abertas para todos os públicos.</h2>
+				<p>Nosso espaço é aconchegante, pet friendly, preparado para receber crianças e pessoas com deficiência.
+					Também oferecemos ambiente de coworking!</p>
+			</div>
+		</section>
+
+		<section class="products container" id="produtos">
+			<h2>Nossos produtos</h2>
+			<div class="products-container">
+				<div class="product-card" data-modal="cafeTradicional">
+					<img src="/Serenatto-cafe/assets/cafe-tradicional-N2Yq_Qr2.png" alt="Café preto">
+					<h3>Cafés Tradicionais</h3>
+				</div>
+				<div class="product-card" data-modal="cafeEspecial">
+					<img src="/Serenatto-cafe/assets/cafe-especial-BqxhaxDv.png" alt="Café expresso">
+					<h3>Cafés Especiais</h3>
+				</div>
+				<div class="product-card">
+					<img src="/Serenatto-cafe/assets/smoothies-DXipwxGd.png" alt="Vitaminas variadas">
+					<h3>Smoothies e Vitaminas</h3>
+				</div>
+				<div class="product-card">
+					<img src="/Serenatto-cafe/assets/paes-DkBFmg8Y.png" alt="Pães variados">
+					<h3>Pães e Focaccias</h3>
+				</div>
+				<div class="product-card">
+					<img src="/Serenatto-cafe/assets/bolo-Dl5NphZG.png" alt="Bolo de morango">
+					<h3>Doces</h3>
+				</div>
+				<div class="product-card">
+					<img src="/Serenatto-cafe/assets/quiche-Od3ts4yt.png" alt="Torta salgada">
+					<h3>Salgados</h3>
+				</div>
+			</div>
+		</section>
+
+		<section class="banner banner-3"></section>
+
+		<section class="contact container">
+			<div class="contact-container">
+				<h3>Entre em contato!</h3>
+				<form class="form" id="contato">
+					<div class="form-group">
+						<label for="nome">Nome</label>
+						<input type="text" id="nome" placeholder="Nome">
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" id="email" placeholder="Email">
+					</div>
+					<div class="form-group">
+						<label for="telefone">Telefone</label>
+						<input type="text" id="telefone" placeholder="Telefone">
+					</div>
+					<div class="form-group">
+						<label for="contato-preferencia">Preferência de contato:</label>
+						<select id="contato-preferencia">
+							<option selected disabled>Escolha uma opção</option>
+							<option value="1">WhatsApp</option>
+							<option value="2">Email</option>
+							<option value="3">Ligação</option>
+						</select>
+					</div>
+					<button type="submit" class="btn">Enviar</button>
+				</form>
+			</div>
+		</section>
+
+		<footer>
+			<div class="footer-content container">
+				<p>&copy; 2025 | Desenvolvido por <a href="https://github.com/thyagoramon" target="_blank">Thyago
+						Ramon</a> durante curso de front-end da Alura | Projeto fictício sem fins comerciais.</p>
+				<div class="footer-image-container">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAbpJREFUeNrsV4tNxDAMbW8BsgHdgG5ANqAjdIQb4UboCGWDMgFhAsIGuQ16E/RcyZGMSVK7SJwEWHpSLh/3xXGec/WyLNUt7VDd2H4FgfYnCRjAEeAAC+KdtB2OG7HHNQmFOAHmRWYzzt/0WwtuQQOYAA+k7wX7ApvXAZ5I3wfAAua9EWjZridAs7FmHR9ZNLJrSo4MwBNHveK4KpwfzaM/FYHhGx9PkRg0BJrMwgaT66hM3miNlMBAzo+Gjp6tFRIwJI9GKYGQ2T21UREFuqFPY4fMtbvH9sT6uShJLfq5+6KcCbaW7JKHklqrTMjk0WmkeBWT50JEdtUObS04AS7YHncWoqAh0CYW9+Q8Y/GpUHJXXfdkTipas0SKo+Xue8ckOiQKVZcRJCO5hhOR0FKd8IWKSNXT5fxJJLQTyG1gxcdmblWvqQUho4Yl+bZsLi1oQVuMXGmhUIL9ViRzi20iEY1CfHh+DNr3gGOa79nvrvDhkSXjoH2Srff5VSgqb6T9yMYuqAdTyUGKgGPOztjnUFB6UqxSdkaVHIpvwQwBi4zjB/nDkyqkZRVxxjVeo8v1/3/DP0/gKsAAL01ZXtXNupIAAAAASUVORK5CYII=" alt="Ícone do whatsapp">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAXBJREFUeNrsV+1NwzAQTRD/ywZ4BG9ARggTkBHCBtmAjOBR3A0YId3AncBcpLP0ZPmzmBZBT3qSo8a+l3fPPre31na3jIfuxnEnkCMgCIpgCLYShueKZIbdhBEstl3MsTx9ZBfMhA94PhJ0pboD4QWe3wlriQICmBvCmFAph5HXcCH8d0KTFEy4NLkkrEDChSoh4BjrgiQDABV0azgSGhTNEnCxJGTdAkbbwGxOxSlg6G8RUAWOV6BQlyPwWOHqkfDG4zM7WoPj951z4Hc+g44vPAdiCmxQRxnxhInUOqpA6VEsCc88XvkL/cCvPrAqzXrBE4xTB5LySP+dbmi8IzZlVCxJMwL7YifoEzLikwV2iW5dghkMpjnZAIk1/9YBkabbsPYgaroNXUyEVygHxolb7lSzYOg+YFjKY8ZwsmJ7ar4bnL05P9aO/eZV1Y6veiH5lVcyh/kal9KchILrZi5IaniuSOXo7/8N/z2BLwEGAOZoTNxsnu4mAAAAAElFTkSuQmCC" alt="Ícone do instagram">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAV5JREFUeNrsV+1twyAQjav+jzeoR2CDeASP4BGyQT2CR8gI2SAegUxQZwM8AT2ks4SvBg4EslTlSU9JLI574b5wpbU+HYmP08F4CygloDlCQA+8A01W/+Cn+d1aawRw3FiZKrDYABVQkOchTtqPESjx+2Db0o2uuMiI6JjOR83HDOyBrUvAQAyGgPNax2NzwqEc+AbOJI422sg8WdBGupLwvmP0BXygkCvJcBEpYOPcoNppxTM69eGJGxkxlwgB1Z8nJKYCE1Hp/JB7efRJ9HQY9xJQnEY0Fey6kivgdaSANQxLAQETV4DEcsl5Ek+sLvYwEi6DRIzOunRcyRo8iXMG5y/feHadwNr1co1pNwLDpmWM2tAY9vrgzvshwfmNs3doQY8zvIhz2oo7EvdLQrwX62rGQ6aYKwxTHXmV85ZhhxSOclxH8oT/WKWUSBX5alanOsol4P1m9P8E/AowAAFJtLBqFJu+AAAAAElFTkSuQmCC" alt="Ícone do twitter">
+				</div>
+			</div>
+		</footer>
+	</main>
+
+	<!-- Modal 1 -->
+	<dialog id="cafeTradicional" class="modal modal_control">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="modal-title">Cafés tradicionais</h3>
+				<button type="button" class="x-button close-modal">×</button>
+			</div>
+			<div class="modal-body">
+				<div class="modal-body-img">
+					<img src="/Serenatto-cafe/assets/cafe-tradicional-N2Yq_Qr2.png" class="modal-image" alt="Xícara de café preto">
+				</div>
+				<p>O café Serenatto é conhecido por seus blends tradicionais e saborosos, que agradam aos amantes da
+					bebida. Nossos grãos são cuidadosamente selecionados e torrados para produzir um aroma rico e sabor
+					equilibrado.</p>
+				<p>Entre os cafés mais tradicionais da casa, destaca-se o "Café Serenatto", um blend exclusivo de grãos
+					com notas de chocolate e caramelo. Outra opção popular é o "Café Italiano", um café expresso
+					encorpado e intenso. Já o "Café Cappuccino" é uma escolha clássica para quem prefere uma bebida
+					cremosa e suave.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="close-button close-modal">Fechar janela</button>
+			</div>
+		</div>
+	</dialog>
+
+	<!-- Modal 2 -->
+	<dialog id="cafeEspecial" class="modal modal_control">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="modal-title">Cafés especiais</h3>
+				<button type="button" class="x-button close-modal">×</button>
+			</div>
+			<div class="modal-body">
+				<div class="modal-body-img">
+					<img src="/Serenatto-cafe/assets/cafe-especial-BqxhaxDv.png" class="modal-image" alt="Xícara de café expresso">
+				</div>
+				<p>Somos conhecidos também por nossos cafés especiais, que são cuidadosamente preparados com grãos
+					selecionados de alta qualidade e técnicas de preparo precisas.</p>
+				<p>Entre as opções de cafés especiais do Café & Bistrô Serenatto, destacamos o café aeropress, que é
+					preparado com uma técnica de imersão e pressão, resultando em uma bebida de sabor intenso e aroma
+					acentuado. Outra opção popular é o café Hario V60, que é preparado com um filtro de papel em formato
+					de cone e resulta em uma bebida limpa e suave, ressaltando as notas sensoriais dos grãos. Além
+					disso, oferecemos uma variedade de bebidas geladas, como o café gelado, que é preparado com grãos
+					torrados escuros e servido com gelo e leite, resultando
+					em uma bebida refrescante e saborosa.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="close-button close-modal">Fechar janela</button>
+			</div>
+		</div>
+	</dialog>
+
+	<div id="modal-backdrop" class="modal-backdrop modal_control"></div>
+
+</body>
+
+</html>

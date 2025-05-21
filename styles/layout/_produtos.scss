@@ -1,0 +1,16 @@
+@use '../base/variables';
+@use '../base/mixins';
+
+.products {
+    @include mixins.flex();
+    padding: 100px 0;
+    gap: 30px;
+    h2 {
+        color: variables.$subheading-color;
+    }
+    .products-container {
+        @include mixins.flex($d:row);
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}

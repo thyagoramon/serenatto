@@ -1,0 +1,74 @@
+@use 'base/reset';
+@use 'base/variables';
+@use 'components/cards';
+@use 'layout/header';
+@use 'layout/banner';
+@use 'layout/servicos';
+@use 'layout/produtos';
+@use 'layout/contato';
+@use 'layout/footer';
+@use 'base/mixins';
+@use 'components/forms';
+@use 'components/modals';
+@use 'layout/dark-mode';
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 100vw;
+    height: 100vh;
+}
+body {
+    font-family: variables.$font-family-primary;
+    background-color: variables.$secondary-color;
+    color: variables.$primary-color;
+    line-height: 1.6;
+    a {
+        text-decoration: none;
+    }
+}
+main {
+    @include mixins.flex();
+    width: 100vw;
+}
+
+.container {
+    width: 75vw;
+    @include mixins.responsive(tablet) {
+        width: 90vw;
+    }
+}
+
+h1 {
+    font-size: 92px;
+    font-weight: bold;
+    @include mixins.responsive(tablet) {
+        font-size: 40px;
+    }
+}
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    @include mixins.responsive(tablet) {
+        font-size: 28px;
+    }
+}
+h3 {
+    font-size: 28px;
+    font-weight: bold;
+    @include mixins.responsive(tablet) {
+        font-size: 20px;
+    }
+}
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+    @include mixins.responsive(tablet) {
+        font-size: 16px;
+    }
+}
+h5 {
+    font-size: 16px;
+    font-weight: bold;
+}

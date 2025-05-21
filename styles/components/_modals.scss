@@ -1,0 +1,86 @@
+@use '../base/variables';
+@use '../base/mixins';
+
+.modal {
+    display: none;
+    position: fixed;
+    border: none;    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: transparent;
+}
+.modal_control {
+    display: none;
+}
+.modal_control.open {
+    display: flex;
+}
+.modal-content {
+    @include mixins.flex();
+    background-color: variables.$secondary-color;
+    width: 50vw;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.2);
+    @include mixins.responsive(tablet) {
+        width: 75vw;
+    }
+    .modal-header {
+        @include mixins.flex($d:row,$j:space-between);
+        width: 100%;
+        padding: 0 15px;
+        .modal-title {
+            color: variables.$subheading-color;
+        }
+        .x-button {
+            cursor: pointer;
+            color: variables.$nav-link-color;
+            background-color: transparent;
+            border: none;
+            font-size: 3rem;
+            @include mixins.hover-color-shadow($sombra:0);
+        }
+    }
+    .modal-body {
+        @include mixins.flex();
+        border-top: 1px solid variables.$modal-border-color;
+        border-bottom: 1px solid variables.$modal-border-color;
+        .modal-body-img {
+            height: 250px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            img {
+                position: absolute;
+                top: 50%;
+		        left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        p {
+            color: variables.$nav-link-color;
+            padding: 15px;
+        }
+    }
+    .modal-footer {
+        padding: 15px 0;
+        .close-button {
+            background-color: variables.$accent-color;
+            color: variables.$secondary-color;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 6px;
+            @include mixins.hover-background-shadow();
+        }
+    }
+}
+.modal-backdrop {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba($color: #fff, $alpha: 0.75);
+}

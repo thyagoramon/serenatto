@@ -1,0 +1,19 @@
+@use '../base/variables';
+@use '../base/mixins';
+
+.services {
+    @include mixins.flex();
+    padding: 100px 0;
+    gap: 50px;
+    @include mixins.responsive(tablet) {
+        gap: 25px;
+    }
+    h2 {
+        color: variables.$subheading-color;
+    }
+}
+.services-container {
+    @include mixins.flex($d:row);
+    gap: 30px;
+    flex-wrap: wrap;
+}
